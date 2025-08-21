@@ -8,7 +8,7 @@ author:
 minima:
   social_links:
     - { platform: github,  user_url: "https://github.com/benr" }
-    - { platform: x,       user_url: "https://x.com/benr" }
+    - { platform: x,       user_url: "https://x.com/benror4" }
 show_excerpts: true
 markdown: kramdown
 plugins:
