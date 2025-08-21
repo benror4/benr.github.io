@@ -1,0 +1,16 @@
+title: "benr.me"
+description: "Ben’s notes, projects, and experiments."
+url: "https://benr.me"
+theme: minima
+author:
+  name: "Ben Rohrbaugh"
+  email: ""
+minima:
+  social_links:
+    - { platform: github,  user_url: "https://github.com/benr" }
+    - { platform: x,       user_url: "https://x.com/benr" }
+show_excerpts: true
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
