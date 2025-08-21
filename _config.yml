@@ -1,22 +1,24 @@
 title: "benr.me"
 description: "Ben’s notes, projects, and experiments."
 url: "https://benr.me"
-baseurl: ""                # root site, leave empty
+baseurl: ""          # keep empty for a root site
 theme: minima
 
 author:
   name: "Ben Rohrbaugh"
   email: ""
 
+# <- THIS drives the top nav everywhere
+header_pages:
+  - index.md
+  - posts.md
+  - projects.md
+  - about.md
+
 minima:
   social_links:
-    - { platform: github, user_url: "https://github.com/benror4" }
-    - { platform: x,      user_url: "https://x.com/benror4" }
-  nav_pages:
-    - index.md            # Home (landing)
-    - posts.md            # Blog feed
-    - projects.md
-    - about.md
+    github: benror4
+    x: benror4
 
 show_excerpts: true
 markdown: kramdown

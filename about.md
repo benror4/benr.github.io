@@ -4,5 +4,4 @@ title: About
 permalink: /about/
 ---
 
-I write about things I'm exploring and post projects I'm building.
-This site is intentionally minimal. Expect frequent changes.
+This is where I write stuff, showcase, and store projects. Site is minimal on purpose, I want the focus to be on the content.

@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-Here are a few things I'm tinkering with. Add or remove sections as you go.
+Here are a few of the things I've worked on in the past, none of them have gone anywhere, but they were all (sorta) fun learning experiences
 
 ## FreezeScience / FreezePod
 Cold-plunge brand experiments, marketing tests, and hardware notes.
