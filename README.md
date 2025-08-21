@@ -1,11 +1,5 @@
 # benr.me starter (GitHub Pages + Jekyll)
 
-## Quick Deploy
-1) Create a repo named **benr.github.io** on your main GitHub account.
-2) Upload these files (or drag-drop the whole folder).
-3) In the repo: **Settings → Pages** → set Source to `main` / `/ (root)`.
-4) GitHub will build the site. It will appear at `https://benr.github.io` and, with the `CNAME`, at `https://benr.me` once DNS is set.
-
 ## Write a Post
 - Add a file in `_posts/` named `YYYY-MM-DD-your-title.md` with front matter:
   ```yaml
@@ -44,5 +38,4 @@ CNAME:
 Keep the `CNAME` file in the repo containing exactly `benr.me`.
 
 ## Troubleshooting
-- If you accidentally enabled Pages on another GitHub account, disable/delete that Pages repo to free the domain.
 - After DNS changes, give it some time to propagate.
