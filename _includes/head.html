@@ -126,11 +126,13 @@
         
         .nav-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
             margin-top: 40px;
-            place-items: center;
-            align-items: stretch; /* This ensures all cards have equal height */
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .nav-card {
@@ -144,7 +146,7 @@
             position: relative;
             overflow: hidden;
             text-align: center;
-            height: 100%; /* Forces all cards to same height */
+            min-height: 200px;
             display: flex;
             flex-direction: column;
             justify-content: center;
