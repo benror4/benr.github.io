@@ -35,7 +35,6 @@ permalink: /
       <h3>About</h3>
       <p>Learn more about me and this site</p>
     </a>
-    </a>
     <a href="/codes/" class="nav-card">
       <div class="card-emoji">💻</div>
       <h3>Codes</h3>

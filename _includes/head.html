@@ -126,14 +126,10 @@
         
         .nav-cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
             margin-top: 40px;
-            justify-items: center;
-            align-items: start;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
+            place-items: center;
         }
         
         .nav-card {
@@ -146,13 +142,11 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
-            width: 100%;
-            max-width: 350px;
-            min-height: 180px;
+            text-align: center;
+            min-height: 200px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            text-align: center;
         }
         
         .nav-card::before {
