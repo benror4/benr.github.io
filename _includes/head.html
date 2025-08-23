@@ -5,5 +5,187 @@
     <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
     {%- seo -%}
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  </head>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        
+        .hero-section {
+            position: relative;
+            height: 80vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease infinite;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+        
+        .main-title {
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            animation: titleSlideIn 1.5s ease-out;
+        }
+        
+        .dot {
+            color: #ffd700;
+            animation: dotPulse 2s ease-in-out infinite;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            margin: 0 0 40px 0;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 0.5s forwards;
+        }
+        
+        .fade-in {
+            animation: fadeInUp 1s ease-out 1s forwards;
+        }
+        
+        .fade-in-delay {
+            animation: fadeInUp 1s ease-out 1.5s forwards;
+        }
+        
+        @keyframes titleSlideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes fadeInUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes dotPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .float-emoji {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.7;
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        .float-emoji:nth-child(1) { top: 20%; left: 20%; }
+        .float-emoji:nth-child(2) { top: 30%; right: 25%; }
+        .float-emoji:nth-child(3) { bottom: 25%; left: 25%; }
+        .float-emoji:nth-child(4) { bottom: 20%; right: 20%; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-15px) rotate(120deg); }
+            66% { transform: translateY(-10px) rotate(240deg); }
+        }
+        
+        .content-section {
+            max-width: 1200px;
+            margin: -50px auto 0;
+            padding: 80px 20px;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .nav-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .nav-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .nav-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s;
+        }
+        
+        .nav-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+        
+        .nav-card:hover::before {
+            left: 100%;
+        }
+        
+        .card-emoji {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .nav-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        
+        .nav-card p {
+            margin: 0;
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .main-title { font-size: 2.5rem; }
+            .hero-section { height: 60vh; }
+            .nav-cards { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
   
