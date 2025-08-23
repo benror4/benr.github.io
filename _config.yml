@@ -14,6 +14,7 @@ header_pages:
   - posts.md
   - projects.md
   - about.md
+  - codes.md
 
 minima:
   social_links:
