@@ -8,14 +8,8 @@ permalink: /
   <div class="hero-content">
     <h1 class="main-title">benr<span class="dot">.</span>me</h1>
     <p class="tagline">notes<span class="fade-in">, builds</span><span class="fade-in-delay">, experiments</span></p>
-    <div class="floating-elements">
-      <span class="float-emoji" style="animation-delay: 0s;">🚀</span>
-      <span class="float-emoji" style="animation-delay: 1s;">⚡</span>
-      <span class="float-emoji" style="animation-delay: 2s;">💻</span>
-      <span class="float-emoji" style="animation-delay: 0.5s;">🌟</span>
     </div>
   </div>
-</div>
 
 <div class="content-section">
   <div class="nav-cards">
