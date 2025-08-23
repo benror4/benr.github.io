@@ -6,7 +6,6 @@ permalink: /
 
 <div class="hero-section">
   <div class="hero-content">
-    <h1 class="main-title">benr<span class="dot">.</span>me</h1>
     <p class="tagline">notes<span class="fade-in">, builds</span><span class="fade-in-delay">, experiments</span></p>
     </div>
   </div>
