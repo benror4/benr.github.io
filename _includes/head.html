@@ -129,6 +129,11 @@
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
             margin-top: 40px;
+            justify-items: center;
+            align-items: start;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .nav-card {
@@ -141,6 +146,13 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            width: 100%;
+            max-width: 350px;
+            min-height: 180px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
         }
         
         .nav-card::before {
