@@ -130,6 +130,7 @@
             gap: 25px;
             margin-top: 40px;
             place-items: center;
+            align-items: stretch; /* This ensures all cards have equal height */
         }
         
         .nav-card {
@@ -143,10 +144,11 @@
             position: relative;
             overflow: hidden;
             text-align: center;
-            min-height: 200px;
+            height: 100%; /* Forces all cards to same height */
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
         }
         
         .nav-card::before {
