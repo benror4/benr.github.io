@@ -6,7 +6,8 @@ permalink: /
 
 <div class="hero-section">
   <div class="hero-content">
-    <p class="tagline">notes<span class="fade-in">, builds</span><span class="fade-in-delay">, experiments</span></p>
+    <h1 class="main-title">notes<span class="fade-in">, builds</span><span class="fade-in-delay">, experiments</span>
+    </h1>
     </div>
   </div>
 
